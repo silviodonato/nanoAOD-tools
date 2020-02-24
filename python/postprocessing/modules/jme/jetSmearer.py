@@ -102,6 +102,7 @@ class jetSmearer(Module):
             jet_pt_sf_and_uncertainty[enum_central_or_shift] = self.jerSF_and_Uncertainty.getScaleFactor(self.params_sf_and_uncertainty, enum_central_or_shift)
 
         smear_vals = {}
+        rndGaus = None
         for central_or_shift in [ enum_nominal, enum_shift_up, enum_shift_down ]:
 
             smearFactor = None
@@ -116,7 +117,9 @@ class jetSmearer(Module):
                 # Case 2: we don't have a generator level jet. Smear jet pT using a random Gaussian variation
                 #
                 sigma = jet_pt_resolution*math.sqrt(jet_pt_sf_and_uncertainty[central_or_shift]**2 - 1.)
-                smearFactor = self.rnd.Gaus(1., sigma)
+#                smearFactor = self.rnd.Gaus(1., sigma) # default method
+                if not rndGaus: rndGaus = self.rnd.Gaus(0., 1.)
+                smearFactor = 1. + rndGaus*sigma
             else:
                 #
                 # Case 3: we cannot smear this jet, as we don't have a generator level jet and the resolution in data is better than the resolution in the simulation,
@@ -173,6 +176,7 @@ class jetSmearer(Module):
         u = self.rnd.Rndm()
 
         smear_vals = {}
+        rndGaus = None
         for central_or_shift in [ enum_nominal, enum_shift_up, enum_shift_down ]:
 
             smearFactor = None
@@ -188,7 +192,9 @@ class jetSmearer(Module):
                 #
                 jet_m_resolution = self.jer.getResolution(self.params_resolution)
                 sigma = jet_m_resolution*math.sqrt(jet_m_sf_and_uncertainty[central_or_shift]**2 - 1.)
-                smearFactor = self.rnd.Gaus(1., sigma)
+#                smearFactor = self.rnd.Gaus(1., sigma) # default method
+                if not rndGaus: rndGaus = self.rnd.Gaus(0., 1.)
+                smearFactor = 1. + rndGaus*sigma
             else:
                 #
                 # Case 3: we cannot smear this jet, as we don't have a generator level jet and the resolution in data is better than the resolution in the simulation,
