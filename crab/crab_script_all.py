@@ -17,7 +17,7 @@ from PhysicsTools.NanoAODTools.postprocessing.modules.common.PrefireCorr import 
 
 modulesToBeCalled = {
 "data2016"    : ["muonScaleRes2016", "vbfhmmModuleDATA"],
-"data2017"    : ["muonScaleRes2017", "vbfhmmModuleDATA"],
+"data2017"    : ["muonScaleRes2017", "vbfhmmModuleDATA17"],
 "data2018A"   : ["jetRecalib2018A", "muonScaleRes2018", "vbfhmmModuleDATA18"],
 "data2018B"   : ["jetRecalib2018B", "muonScaleRes2018", "vbfhmmModuleDATA18"],
 "data2018C"   : ["jetRecalib2018C", "muonScaleRes2018", "vbfhmmModuleDATA18"],
@@ -29,7 +29,7 @@ modulesToBeCalled = {
 }
 
 if len(sys.argv) != 3:
-    raise Exception("Launch crab_script_all.py specifying two options: job numbers (eg. 0) and configuration (eg. mc2016). \n\nExample: python crab_script_all.py 0 data2018C\n")
+    raise Exception("Launch crab_script_all.py specifying two options: job numbers (eg. 0) and configuration (eg. mc2016). \n\nExample: python crab_script_all.py 0 mc2017\n")
 
 moduleSettings = sys.argv[2]
 

@@ -5,7 +5,7 @@ from CRABClient.UserUtilities import config, getUsernameFromSiteDB
 
 config = Configuration()
 
-version = "PROD_8_04"
+version = "PROD_8_06"
 
 datasetToTest = [] ## if empty, run on all datasets
 #datasetToTest = ["/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
@@ -17,36 +17,8 @@ requestsToSkip = [
 ]
 
 requestsToTest = [ 
-#"PROD_7_7_DY105VBF_2016AMCPY_ext2",
-#"PROD_7_7_DY105VBF_2016AMCPY_ext1"
-#"PROD_7_7_DY1J_2016AMCPY",
 #"PROD_7_7_DY1J_2016AMCPY_ext1",
 #"PROD_7_7_DY2J_2016AMCPY_ext1"
-#"PROD_7_7_WminusHmm_2016POWPY",
-#"PROD_6_3_bbHmm_2016AMCPY",
-#"PROD_6_4_DY105VBF_2016MGPY",
-#"PROD_7_2_DY105_2018AMCPY",
-#"PROD_7_3_ZmmJJ_2016POWPY",
-#"PROD_6_2_ZmmJJv5_2016POWPY"
-#"PROD_7_3_STs_2016AMCPY",
-#"PROD_7_3_STwtbar_2016POWPY",
-#"PROD_7_3_STwt_2016POWPY",
-#"PROD_7_3_STtbar_2016POW_MADSPIN_PY",
-#"PROD_7_3_STt_2016POW_MADSPIN_PY",
-#"PROD_7_4_TT_2016POWPY",
-#"PROD_7_3_TTlep_2016POWPY",
-#"PROD_7_3_TTsemi_2016POWPY",
-#"PROD_7_3_TThad_2016POWPY",
-#"PROD_7_3_TT_2016POWHERWIG",
-#"PROD_7_1_SingleMuonRun2016"
-#"PROD_6_4_DY105VBF_2016AMCPY"
-## if empty, run on all datasets
-#"PROD_4_1_others_2017",
-#"PROD_4_1_others_2018",
-#"PROD_4_1_d_W2J_2018AMCPY_ext1",
-#    "PROD_2_0_EWKZ_2018MGHERWIG",
-#    "PROD_2_0_WWJJlnln_2017MGPY",
-#    "PROD_2_0_EWKZ105_2016MGHERWIG",
 ] ## if empty, run on all datasets
 
 
@@ -135,14 +107,13 @@ config.JobType.allowUndistributedCMSSW = True
 from datasetsGeoFit import data2016, data2017, data2018, mc2016, mc2017, mc2018
 
 
+
 datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
 #datasetsNames = ["mc2017","data2017", "mc2016","data2016"]
 datasetsNames = ["mc2018","data2018"]
 datasetsNames = ["mc2016","data2016"]
-datasetsNames = ["data2016", "data2017", "data2018"]
-datasetsNames = ["data2016"]
-datasetsNames = ["mc2017", "mc2018"]
 datasetsNames = ["data2017"]
+
 
 from checker import checkDatasets
 #checkDatasets(datasetsNames, globals())
