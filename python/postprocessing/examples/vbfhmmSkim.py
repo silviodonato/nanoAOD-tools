@@ -169,9 +169,30 @@ class vbfhmmProducer(Module):
         
         if self.year!="2017" : 
             for j in jetsNolep : j.puId17 = j.puId
-        
+
+
+        etabins=[0,1.93,2.5,3.139]
+        ptbins=[0,50]
+        jerBinName = ["JEReta%spt%s"%(n,m) for m in range(len(ptbins)) for n in range(len(etabins))]
+
+        for j in jetsNolep:
+            binEta = len(etabins)-1
+            binPt = len(ptbins)-1
+            for n in range(len(etabins)-1) : 
+                if abs(j.eta) > etabins[n] and  abs(j.eta) < etabins[n+1] : binEta = n
+            for m in range(len(ptbins)-1) :  
+                if j.pt > ptbins[m] and j.pt < ptbins[m+1] : binPt = m
+            #print "test pteta ", abs(j.eta), " \t", j.pt, " \t", binEta, " \t", binPt, " \t", 3*binPt+binEta, jerBinName
+            
+            for k in range(len(jerBinName)) : setattr(j, jerBinName[k], j.pt_nom if k==3*binPt+binEta else j.pt)
+            #setattr(j, name, j.pt)
+            
+            #j.PT=getattr(j, vn)
+            
+       
+       
         passAtLeastOne=False
-        for vn in self.jesVariation:
+        for vn in self.jesVariation + jerBinName:
             for j in jetsNolep:
                 j.PT=getattr(j, vn)
             sortedJets=sorted(jetsNolep,key=lambda j : j.PT, reverse=True)
