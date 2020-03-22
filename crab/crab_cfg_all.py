@@ -5,50 +5,25 @@ from CRABClient.UserUtilities import config, getUsernameFromSiteDB
 
 config = Configuration()
 
-version = "PROD_8_06"
+version = "PROD_12_0"
 
-datasetToTest = [] ## if empty, run on all datasets
-#datasetToTest = ["/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
-#datasetToTest = ["/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV4c_018_realistic_v15-v1-f77ac490c2015e446b4336e158bd70bc/USER"] ## if empty, run on all datasets
-#datasetToTest = ["/DYJetsToLL_M-105To160_TuneCP5_PSweights_13TeV-amcatnloFXFX-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4i_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
-#datasetToTest = ['/DYJetsToLL_M-105To160_TuneCP5_PSweights_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv5-Nano1June2019_102X_upgrade2018_realistic_v19-v1/NANOAODSIM']
-
-requestsToSkip = [
+datasetToTest = [ ## if empty, run on all datasets
+    #"/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
 ]
 
-requestsToTest = [ 
+requestsToSkip = [ ## if empty, run on all datasets
+]
+
+requestsToTest = [ ## if empty, run on all datasets
 #"PROD_7_7_DY1J_2016AMCPY_ext1",
-#"PROD_7_7_DY2J_2016AMCPY_ext1"
-] ## if empty, run on all datasets
+] 
 
-
-
-#def getModuleSettingsFromDataset(dataset):
-    #datasetTag = dataset.split("/")[2]
-    #if "RunIIAutumn18" in datasetTag: return 'mc2018'
-    #elif "RunIIFall17" in datasetTag: return 'mc2017'
-    #elif "RunIISummer16" in datasetTag: return 'mc2016'
-    #elif "Run2016" in datasetTag: return 'data2016'
-    #elif "Run2017" in datasetTag: return 'data2017'
-    #elif "Run2018A" in datasetTag: return 'data2018A'
-    #elif "Run2018B" in datasetTag: return 'data2018B'
-    #elif "Run2018C" in datasetTag: return 'data2018C'
-    #elif "Run2018D" in datasetTag: return 'data2018D'
-    #else: raise Exception("Unable to find module settings for %s"%dataset)
 
 def getModuleSettingsFromSampleName(sample):
     if   "_2018" in sample: return 'mc2018'
     elif "_2017" in sample: return 'mc2017'
     elif "_2016" in sample: return 'mc2016'
-    #elif "RunIISummer16NanoAODv6" in datasetTag: return 'mc2016'
-    #elif "RunIISummer16NanoAODv5" in datasetTag: return 'mc2016'
-    elif "nlu-RunIISummer16MiniAODv3" in sample: return 'mc2016'
-    elif "FSRNANO2016" in sample: return 'mc2016'
-    elif "FSRmyNanoProdMc2017" in sample: return 'mc2017'
-    elif "FSRmyNanoProdMc2018" in sample: return 'mc2018'
-    #elif "SingleMuon" in sample: return 'data2016'
     elif "Run2016" in sample: return 'data2016'
-    elif "un2016" in sample: return 'data2016'
     elif "Run2017" in sample: return 'data2017'
     elif "Run2018A" in sample: return 'data2018A'
     elif "Run2018B" in sample: return 'data2018B'
@@ -58,8 +33,8 @@ def getModuleSettingsFromSampleName(sample):
 
 config.section_("General")
 config.General.transferLogs=True
-config.General.workArea = '/home/users/sdonato/scratchssd/crab/'#+version
-config.General.workArea = '/afs/cern.ch/work/g/gimandor/public/testNANOAOD'#+version
+config.General.workArea = '/scratchssd/sdonato/crab'#+version
+#config.General.workArea = '/afs/cern.ch/work/g/gimandor/public/testNANOAOD'#+version
 
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
@@ -85,7 +60,7 @@ config.Data.unitsPerJob = 1
 
 
 config.Data.outLFNDirBase = '/store/user/sdonato/'+version+'/'
-config.Data.outLFNDirBase = '/store/user/gimandor/'+version+'/'
+#config.Data.outLFNDirBase = '/store/user/gimandor/'+version+'/'
 config.Data.publication = True
 config.section_("Site")
 config.Site.ignoreGlobalBlacklist = True
@@ -99,21 +74,18 @@ config.Site.storageSite = "T2_IT_Legnaro"
 
 config.JobType.allowUndistributedCMSSW = True
 
-#from datasets2016NANOv6 import data2016, mc2016
-##from datasets2016AndreaV7 import data2016, mc2016
-#from datasets2017AndreaV7 import data2017, mc2017
-#from datasets2018AndreaV7 import data2018, mc2018
-
-from datasetsGeoFit import data2016, data2017, data2018, mc2016, mc2017, mc2018
-
-
-
+data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
 datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
-#datasetsNames = ["mc2017","data2017", "mc2016","data2016"]
-datasetsNames = ["mc2018","data2018"]
-datasetsNames = ["mc2016","data2016"]
-datasetsNames = ["data2017"]
 
+#from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
+#from datasetsAndreaV4_2017 import mc2017
+#from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
+#from datasetsNanoV6_2016 import mc2016
+#from datasetsNanoV6_2018 import mc2018
+#from datasetsNanoV6_ForJerStudy_2016 import mc2016
+
+from datasetsAndreaV8_DataSignal import data2017
+#from datasetsAndreaV4_2017 import mc2017
 
 from checker import checkDatasets
 #checkDatasets(datasetsNames, globals())
@@ -158,9 +130,9 @@ if __name__ == '__main__':
                 print
                 print config
                 print
-#                try:
-                if True:
+                try:
+#                if True:
                     crabCommand('submit', config = config, dryrun = False) ## dryrun = True for local test
                     print "DONE"
- #               except:
- #                   print('crab submission failed. Move the the next job. %s'%requestName)
+                except:
+                    print('crab submission failed. Move the the next job. %s'%requestName)
