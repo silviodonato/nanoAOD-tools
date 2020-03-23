@@ -1,11 +1,12 @@
 data2017 = {
-"SingleMuonRun2017"     : [
-    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017F-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
-    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017E-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
-    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017D-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
-    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017C-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
-    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017B-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
-],
+### Take Data and Signal from datasetsDataSignal.py
+#"SingleMuonRun2017"     : [
+#    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017F-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
+#    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017E-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
+#    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017D-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
+#    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017C-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
+#    #"/SingleMuon/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdData2017_NANOV4_un2017B-31Mar2018-v1-fca2a3a20fe9002e1dc7c971a0424999/USER",
+#],
 }
 
 #/DYJetsToLL_M-105To160_TuneCP5_PSweights_13TeV-amcatnloFXFX-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4i_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER
@@ -84,6 +85,7 @@ mc2017 = {'DY0J_2017AMCPY': ['/DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8/
 "/ZZTo4L_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v2-35a58109e00c38928fe6fe04f08bafb3/USER",
 "/ZZTo4L_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"],
  'ZZ_2017AMCPY': ['/ZZ_TuneCP5_13TeV-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER'],
+### Take Data and Signal from datasetsDataSignal.py
  #'ggHmm_2017AMCPY': ['/GluGluHToMuMu_M125_13TeV_amcatnloFXFX_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER'],
  #'ggHmm_2017AMCPY2': [None],
  #'ggHmm_2017POWPY': [None],

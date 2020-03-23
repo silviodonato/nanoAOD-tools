@@ -1,14 +1,15 @@
 data2016 = {
-"SingleMuonRun2016"     : [
-    #'/SingleMuon/Run2016B_ver1-Nano25Oct2019_ver1-v1/NANOAOD', # lumisections masked
-    '/SingleMuon/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD',
-    '/SingleMuon/Run2016C-Nano25Oct2019-v1/NANOAOD',
-    '/SingleMuon/Run2016D-Nano25Oct2019-v1/NANOAOD',
-    '/SingleMuon/Run2016E-Nano25Oct2019-v1/NANOAOD',
-    '/SingleMuon/Run2016F-Nano25Oct2019-v1/NANOAOD',
-    '/SingleMuon/Run2016G-Nano25Oct2019-v1/NANOAOD',
-    '/SingleMuon/Run2016H-Nano25Oct2019-v1/NANOAOD'
-],
+### Take Data and Signal from datasetsDataSignal.py
+#"SingleMuonRun2016"     : [
+#    #'/SingleMuon/Run2016B_ver1-Nano25Oct2019_ver1-v1/NANOAOD', # lumisections masked
+#    '/SingleMuon/Run2016B_ver2-Nano25Oct2019_ver2-v1/NANOAOD',
+#    '/SingleMuon/Run2016C-Nano25Oct2019-v1/NANOAOD',
+#    '/SingleMuon/Run2016D-Nano25Oct2019-v1/NANOAOD',
+#    '/SingleMuon/Run2016E-Nano25Oct2019-v1/NANOAOD',
+#    '/SingleMuon/Run2016F-Nano25Oct2019-v1/NANOAOD',
+#    '/SingleMuon/Run2016G-Nano25Oct2019-v1/NANOAOD',
+#    '/SingleMuon/Run2016H-Nano25Oct2019-v1/NANOAOD'
+#],
 }
 
 mc2016 = {
@@ -207,41 +208,41 @@ mc2016 = {
 ],
 
 
+### Take Data and Signal from datasetsDataSignal.py
+#"vbfHmm_2016POWPY"      : [
+#    '/VBF_HToMuMu_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM',
+#    '/VBFHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"vbfHmm_2016POWHERWIG"  : [
+#    '/VBFHToMuMu_M-125_TuneEEC5_13TeV-powheg-herwigpp/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"vbfHmm_2016AMCPY"      : [
+#    '/VBFHToMuMu_M125_TuneCP5_PSweights_13TeV_amcatnlo_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"vbfHmm_2016AMCHERWIG"  : [
+#    '/VBFHToMuMu_M-125_TuneEEC5_13TeV-amcatnlo-herwigpp/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
 
-"vbfHmm_2016POWPY"      : [
-    '/VBF_HToMuMu_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1/NANOAODSIM',
-    '/VBFHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"vbfHmm_2016POWHERWIG"  : [
-    '/VBFHToMuMu_M-125_TuneEEC5_13TeV-powheg-herwigpp/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"vbfHmm_2016AMCPY"      : [
-    '/VBFHToMuMu_M125_TuneCP5_PSweights_13TeV_amcatnlo_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"vbfHmm_2016AMCHERWIG"  : [
-    '/VBFHToMuMu_M-125_TuneEEC5_13TeV-amcatnlo-herwigpp/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
 
-
-"zHmm_2016POWPY"        : [
-    '/ZH_HToMuMu_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM',
-    '/ZH_HToMuMu_ZToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"ttHmm_2016POWPY"       : [
-    '/ttHToMuMu_M125_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"WplusHmm_2016POWPY"    : [
-    '/WplusH_HToMuMu_WToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"WminusHmm_2016POWPY"   : [
-    '/WminusH_HToMuMu_WToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
-],
-"vbfHtautau_2016POWPY"  : [
-    "/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv5-PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM"
-],
-"bbHmm_2016AMCPY"  : [
-    "/bbHToMuMu_M-125_4FS_yb2_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv5-PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM"
-],
+#"zHmm_2016POWPY"        : [
+#    '/ZH_HToMuMu_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM',
+#    '/ZH_HToMuMu_ZToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"ttHmm_2016POWPY"       : [
+#    '/ttHToMuMu_M125_TuneCP5_PSweights_13TeV-powheg-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"WplusHmm_2016POWPY"    : [
+#    '/WplusH_HToMuMu_WToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"WminusHmm_2016POWPY"   : [
+#    '/WminusH_HToMuMu_WToAll_M125_TuneCP5_PSweights_13TeV_powheg_pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM'
+#],
+#"vbfHtautau_2016POWPY"  : [
+#    "/VBFHToTauTau_M125_13TeV_powheg_pythia8/RunIISummer16NanoAODv5-PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM"
+#],
+#"bbHmm_2016AMCPY"  : [
+#    "/bbHToMuMu_M-125_4FS_yb2_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer16NanoAODv5-PUMoriond17_Nano1June2019_102X_mcRun2_asymptotic_v7-v1/NANOAODSIM"
+#],
 }
 
 
