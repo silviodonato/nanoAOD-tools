@@ -15,9 +15,9 @@ for folder in folders:
     for f_ in files:
         size = os.path.getsize(fullPath+"/"+f_)
         if size in sizes:
-            command = "edmEventSize -v %s | grep Events | awk '{print $4}'"%(fullPath+"/"+sizes[size])
+            command = "edmEventSize -v %s "%(fullPath+"/"+sizes[size]) #| grep Events | awk '{print $4}
             ev1 = os.popen ( command ).read()
-            command = "edmEventSize -v %s | grep Events | awk '{print $4}'"%(fullPath+"/"+f_)
+            command = "edmEventSize -v %s "%(fullPath+"/"+f_) #| grep Events | awk '{print $4}
             ev2 = os.popen ( command ).read()
             if ev1==ev2:
                 print("Same size of files %s %s"%(sizes[size], f_))
