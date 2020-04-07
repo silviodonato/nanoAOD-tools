@@ -80,11 +80,11 @@ mc2016 = {
 
 ### EWK low pt samples ###
 
-"EWKZFIX4_2016MGHERWIG"     : [
+"EWKZCORR_2016MGHERWIG"     : [
     '/EWK_LLJJ_MLL-50_MJJ-120_TuneEEC5_13TeV-madgraph-herwigpp_corrected/arizzi-RunIISummer16MiniAODv3_FSRNANO2016MCV8g_un2_asymptotic_v3-v1-b5627bf5542cb3e56008c4afca3c6465/USER',
 ],
 
-"EWKZ105FIX4_2016MGHERWIG"     : [
+"EWKZ105CORR_2016MGHERWIG"     : [
     '/EWK_LLJJ_MLL_105-160_SM_5f_LO_TuneEEC5_13TeV-madgraph-herwigpp_corrected/arizzi-RunIISummer16MiniAODv3_FSRNANO2016MCV8g_un2_asymptotic_v3-v1-b5627bf5542cb3e56008c4afca3c6465/USER',
 ],
 }
@@ -143,14 +143,28 @@ mc2017 = {
 
 ### EWK low pt samples ###
 
-"EWKZ105FIX4_2017MGHERWIG"     : [
+"EWKZ105CORR_2017MGHERWIG"     : [
     '/EWK_LLJJ_MLL_105-160_SM_5f_LO_TuneCH3_13TeV-madgraph-herwig7_corrected/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8g_017_realistic_v14-v1-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
 ],
 
-"EWKZFIX4_2017MGHERWIG"     : [
+"EWKZCORR_2017MGHERWIG"     : [
     '/EWK_LLJJ_MLL-50_MJJ-120_TuneCH3_PSweights_13TeV-madgraph-herwig7_corrected/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8g_017_realistic_v14-v1-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
 ],
+
+
+### latest signal samples ###
+
+"vbfHmm_2017POWHERWIG7"     : [
+    '/VBFHToMuMu_M-125_TuneCP5_13TeV-powheg-herwig7/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8g_7a39ab0ed099ff55ceb9-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
+],
+
+
+"vbfHmm_2017POWPY2"     : [
+    '/VBFHToMuMu_M-125_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8g_7a39ab0ed099ff55ceb9-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
+],
+
 }
+
 
 
 mc2018 = {
@@ -193,11 +207,11 @@ mc2018 = {
 
 ### EWK low pt samples ###
 
-"EWKZ105FIX4_2018MGHERWIG"     : [
+"EWKZ105CORR_2018MGHERWIG"     : [
     '/EWK_LLJJ_MLL_105-160_SM_5f_LO_TuneCH3_13TeV-madgraph-herwig7_corrected/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8g_018_realistic_v15-v1-91eaff287f592060132a857a833a7efc/USER',
 ],
 
-"EWKZFIX4_2018MGHERWIG"     : [
+"EWKZCORR_2018MGHERWIG"     : [
     '/EWK_LLJJ_MLL-50_MJJ-120_TuneCH3_PSweights_13TeV-madgraph-herwig7_corrected/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8g_018_realistic_v15-v2-91eaff287f592060132a857a833a7efc/USER',
 ],
 }

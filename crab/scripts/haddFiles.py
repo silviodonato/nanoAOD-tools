@@ -1,5 +1,5 @@
-nprocesses = 32
-version = "PROD_12_0"
+nprocesses = 16
+version = "PROD_13_0"
 folder = "/home/users/sdonato/scratchssd/fileSkimFromNanoAOD"
 server = "t2-xrdcms.lnl.infn.it:7070"
 haddPath = "/home/users/sdonato/scratchssd/Skim/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/scripts/haddnano.py"
@@ -16,57 +16,17 @@ data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), d
 #from datasetsNanoV6_2016 import mc2016
 #from datasetsNanoV6_ForJerStudy_2016 import mc2016
 
+#from datasetsAndreaV4_2017 import mc2017
+from datasetsAndreaV8_DataSignal import mc2017
+#from datasetsAndreaV8_ForMassScan import mc2017
+
 selection = [
-    "SingleMuonRun2018D",
-    "SingleMuonRun2018A",
-    "SingleMuonRun2018B",
-    "vbfHmm_2016AMCHERWIG",
-    "SingleMuonRun2016",
-    "ggHmm_2018POWPY",
-    "SingleMuonRun2017",
-    "ggHmm_2016POWPY",
-    "DY_2016AMCPY",
-    "DY_2016AMCHERWIG",
-    "DY_2016MGPY",
-    "STtbar_2018POWPY",
-    "ZZ2l2n_2018POWPY",
-    "TT_2018AMCPY",
-    "W0J_2018AMCPY",
-    "DY105_2018AMCPY",
-    "ZZ4l_2018POWPY",
-    "DY3J_2018MGPY",
-    "ZZ2l2q_2018POWPY",
-    "WWlnqq_2018POWPY",
-    "DY1J_2018MGPY",
-    "DY105_2018MGPY",
-    "DY2J_2018AMCPY",
-    "DY0J_2018AMCPY",
-    "STt_2018POWPY",
-    "TTsemi_2018POWPY",
-    "DYM50_2018AMCPY",
-    "TThad_2018POWPY",
-    "DY2J_2016AMCPY",
-    "TTsemi_2016POWPY",
-    "DY105VBF_2016AMCPY",
-    "TTlep_2016POWPY",
-    "TT_2016POWPY",
-    "TTlep_2016MGPY",
-    "TThad_2016POWPY",
-    "DYM50_2016AMCPY",
-    "W2J_2016AMCPY",
-    "DY105_2016AMCPY",
-    "WZ2l2n_2016AMC_MADSPIN_PY",
-    "DY1J_2016AMCPY",
-    "DY0J_2016AMCPY",
-    "DY105_2016MGPY",
-    "W2J_2017AMCPY",
-    "DY105_2017AMCPY",
-    "W1J_2017AMCPY",
-    "STt_2017POWPY",
-    "W0J_2017AMCPY",
-    "ZZ4l_2017POWPY",
-    "DY2J_2017AMCPY",
-    "DY105VBF_2016AMCPY"
+"vbfHmm_2017POWHERWIG7",
+"vbfHmm_2017POWPY2",
+#"DY2J_2017AMCPY",
+#"EWKZ_2017MGPY2",
+#"ZZ4l_2017POWPY",
+#"STtbar_2017POWPY",
 ]
 
 from checker import checkDatasets
