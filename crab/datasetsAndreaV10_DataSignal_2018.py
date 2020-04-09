@@ -61,7 +61,6 @@ mc2018 = {
     '/VBFHToTauTau_M125_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRnano18MC_NANOV10b_ealistic_v15_ext1-v1-d92a4324cf7915102060a1e7868b1f8f/USER',
 ],
 
-'''
 ### ACM sample ###
 "EWKZ105FIX2_2018MGHERWIG"     : [
 #    '/EWK_LLJJ_MLL_105-160_ptJ-0_SM_5f_LO_TuneEEC5_13TeV-madgraph-h7/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8d_410aea6d0b4d52723d06-f46cb006ca3922cbc5562884b4809ef9/USER'
@@ -76,7 +75,6 @@ mc2018 = {
 "EWKZCORR_2018MGHERWIG"     : [
 #    '/EWK_LLJJ_MLL-50_MJJ-120_TuneCH3_PSweights_13TeV-madgraph-herwig7_corrected/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8g_018_realistic_v15-v2-91eaff287f592060132a857a833a7efc/USER',
 ],
-'''
 }
 
 
