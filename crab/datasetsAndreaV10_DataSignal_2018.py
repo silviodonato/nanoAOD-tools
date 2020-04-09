@@ -35,7 +35,8 @@ mc2018 = {
 ],
 "ggHmm_2018POWPY"       : [
 #    '/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8a_ealistic_v15_ext1-v1-f46cb006ca3922cbc5562884b4809ef9/USER',
-#    '/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8a_018_realistic_v15-v2-f46cb006ca3922cbc5562884b4809ef9/USER',],
+#    '/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8a_018_realistic_v15-v2-f46cb006ca3922cbc5562884b4809ef9/USER',
+],
 
 "vbfHmm_2018POWPY"      : [
     '/VBFHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/arizzi-RunIISummer16MiniAODv3_FSRnano18MC_NANOV10b_018_realistic_v15-v1-d92a4324cf7915102060a1e7868b1f8f/USER',
