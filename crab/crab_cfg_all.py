@@ -15,8 +15,8 @@ requestsToSkip = [ ## if empty, run on all datasets
 ]
 
 requestsToTest = [ ## if empty, run on all datasets
-"PROD_13_0_vbfHmm_2017POWHERWIG7",
-"PROD_13_0_vbfHmm_2017POWPY2",
+#"PROD_13_0_vbfHmm_2017POWHERWIG7",
+#"PROD_13_0_vbfHmm_2017POWPY2",
 ] 
 
 def getModuleSettingsFromSampleName(sample):
