@@ -94,16 +94,22 @@ mc2018.update(datasetsNanoV6_2018.mc2018)
 import datasetsNanoV6_ForJerStudy_2016 
 mc2016.update(datasetsNanoV6_ForJerStudy_2016.mc2016)
 
-print "data2016 = ",
-pprint.pprint(data2016)
+print
 print "mc2016 = ",
-pprint.pprint(updateDatasets(mc2016))
-print "data2017 = ",
 pprint.pprint(data2017)
+print
 print "mc2017 = ",
-pprint.pprint(updateDatasets(mc2017))
-print "data2018 = ",
-pprint.pprint(data2018)
+pprint.pprint(updateDatasets(mc2016))
+print
 print "mc2018 = ",
 pprint.pprint(updateDatasets(mc2018))
+print
+print "data2016 = ",
+pprint.pprint(data2016)
+print
+print "data2017 = ",
+pprint.pprint(updateDatasets(mc2017))
+print
+print "data2018 = ",
+pprint.pprint(data2018)
 
