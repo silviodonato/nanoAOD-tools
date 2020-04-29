@@ -31,16 +31,20 @@ def updateDatasets(mc, nanoAODv7datasets):
                     mc_pd[sample].add(primaryDataset)
                 else:
                     print "## WARNING: %s %s"%(sample, primaryDataset)
-
+    
+    if "TThad_2017POWPY" in mc:
+        print "HELLO",mc_pd["TThad_2017POWPY"]
+    
     ##init mc new
     mc_new = {}
     for sample in mc:
+        mc_new[sample] = []
         for primaryDataset in mc_pd[sample]:
-            primaryDataset.replace("ext1","")
-            primaryDataset.replace("ext2","")
-            primaryDataset.replace("ext3","")
-            primaryDataset.replace("v2","")
-        mc_new[sample] = [dataset for dataset in nanoAODv7datasets if primaryDataset in dataset]
+            primaryDataset = primaryDataset.replace("ext1","")
+            primaryDataset = primaryDataset.replace("ext2","")
+            primaryDataset = primaryDataset.replace("ext3","")
+            primaryDataset = primaryDataset.replace("v2","")
+            mc_new[sample] += [dataset for dataset in nanoAODv7datasets if primaryDataset in dataset]
     
     return mc_new
 
