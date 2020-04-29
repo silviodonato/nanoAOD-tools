@@ -105,10 +105,10 @@ print "data2018 = ",
 pprint.pprint(data2018)
 print
 print "mc2016 = ",
-pprint.pprint(updateDatasets(mc2017))
+pprint.pprint(updateDatasets(mc2016))
 print
 print "mc2017 = ",
-pprint.pprint(updateDatasets(mc2016))
+pprint.pprint(updateDatasets(mc2017))
 print
 print "mc2018 = ",
 pprint.pprint(updateDatasets(mc2018))
