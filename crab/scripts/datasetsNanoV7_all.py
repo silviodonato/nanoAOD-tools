@@ -8,7 +8,18 @@ data2016 = {'SingleMuonRun2016B': ['/SingleMuon/Run2016B-02Apr2020-v1/NANOAOD',
  'SingleMuonRun2016G': ['/SingleMuon/Run2016G-02Apr2020-v1/NANOAOD'],
  'SingleMuonRun2016H': ['/SingleMuon/Run2016H-02Apr2020-v1/NANOAOD']}
 
-data2017 = {'DY0J_2017AMCPY': ['/DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM'],
+data2017 = {'SingleMuonRun2017B': ['/SingleMuon/Run2017B-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2017C': ['/SingleMuon/Run2017C-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2017D': ['/SingleMuon/Run2017D-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2017E': ['/SingleMuon/Run2017E-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2017F': ['/SingleMuon/Run2017F-02Apr2020-v1/NANOAOD']}
+
+data2018 = {'SingleMuonRun2018A': ['/SingleMuon/Run2018A-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2018B': ['/SingleMuon/Run2018B-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2018C': ['/SingleMuon/Run2018C-02Apr2020-v1/NANOAOD'],
+ 'SingleMuonRun2018D': ['/SingleMuon/Run2018D-02Apr2020-v1/NANOAOD']}
+
+mc2016 = {'DY0J_2017AMCPY': ['/DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIIAutumn18NanoAODv7-Nano02Apr2020_102X_upgrade2018_realistic_v21-v1/NANOAODSIM'],
  'DY105VBF_2017AMCPY': [],
  'DY105VBF_2017MGPY': [],
  'DY105_2017AMCPY': [],
@@ -105,17 +116,6 @@ data2017 = {'DY0J_2017AMCPY': ['/DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia
  'zH120mm_2017POWPY': [],
  'zH130mm_2017POWPY': [],
  'zHmm_2017POWPY': []}
-
-data2018 = {'SingleMuonRun2018A': ['/SingleMuon/Run2018A-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2018B': ['/SingleMuon/Run2018B-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2018C': ['/SingleMuon/Run2018C-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2018D': ['/SingleMuon/Run2018D-02Apr2020-v1/NANOAOD']}
-
-mc2016 = {'SingleMuonRun2017B': ['/SingleMuon/Run2017B-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2017C': ['/SingleMuon/Run2017C-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2017D': ['/SingleMuon/Run2017D-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2017E': ['/SingleMuon/Run2017E-02Apr2020-v1/NANOAOD'],
- 'SingleMuonRun2017F': ['/SingleMuon/Run2017F-02Apr2020-v1/NANOAOD']}
 
 mc2017 = {'DY0J_2016AMCPY': [],
  'DY105VBF_2016AMCPY': [],
