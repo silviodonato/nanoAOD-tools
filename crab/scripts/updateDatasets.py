@@ -25,6 +25,7 @@ def updateDatasets(mc):
                 if "ext1" in dataset: primaryDataset += "ext1"
                 if "ext2" in dataset: primaryDataset += "ext2"
                 if "ext3" in dataset: primaryDataset += "ext3"
+                if "v2" in dataset: primaryDataset += "v2"
                 if not primaryDataset in allPrimaryDatasets:
                     allPrimaryDatasets.add(primaryDataset)
                     mc_pd[sample].add(primaryDataset)
@@ -38,7 +39,8 @@ def updateDatasets(mc):
             primaryDataset.replace("ext1","")
             primaryDataset.replace("ext2","")
             primaryDataset.replace("ext3","")
-            mc_new[sample] = [dataset for dataset in allNanoAODv7 if primaryDataset in dataset]
+            primaryDataset.replace("v2","")
+        mc_new[sample] = [dataset for dataset in allNanoAODv7 if primaryDataset in dataset]
     
     return mc_new
 
