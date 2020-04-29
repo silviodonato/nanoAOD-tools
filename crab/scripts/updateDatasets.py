@@ -12,7 +12,7 @@ def makeData (allDatasets, name="data2016"):
     return data
 
 
-def updateDatasets(mc):
+def updateDatasets(mc, nanoAODv7datasets):
     allPrimaryDatasets=set()
 
     ## take only primary dataset
@@ -40,7 +40,7 @@ def updateDatasets(mc):
             primaryDataset.replace("ext2","")
             primaryDataset.replace("ext3","")
             primaryDataset.replace("v2","")
-        mc_new[sample] = [dataset for dataset in allNanoAODv7 if primaryDataset in dataset]
+        mc_new[sample] = [dataset for dataset in nanoAODv7datasets if primaryDataset in dataset]
     
     return mc_new
 
@@ -105,13 +105,13 @@ print "data2018 = ",
 pprint.pprint(data2018)
 print
 print "mc2016 = ",
-pprint.pprint(updateDatasets(mc2016))
+pprint.pprint(updateDatasets(mc2016, allDatasets["mc2016"]))
 print
 print "mc2017 = ",
-pprint.pprint(updateDatasets(mc2017))
+pprint.pprint(updateDatasets(mc2017, allDatasets["mc2017"]))
 print
 print "mc2018 = ",
-pprint.pprint(updateDatasets(mc2018))
+pprint.pprint(updateDatasets(mc2018, allDatasets["mc2018"]))
 print
 
 
