@@ -15,10 +15,12 @@ requestsToSkip = [ ## if empty, run on all datasets
 ]
 
 requestsToTest = [ ## if empty, run on all datasets
-"PROD_13_4_EWKZ105_2016MGPYDIPOLE",
-"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
-"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
-#"PROD_13_0_vbfHmm_2017POWPY2",
+#"PROD_13_4_EWKZ105_2016MGPYDIPOLE",
+#"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
+#"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
+#"PROD_13_4_ggHmm_2018AMCPY",
+"PROD_13_4_EWKZ105CORR_2018MGHERWIG",
+"PROD_13_4_EWKZCORR_2018MGHERWIG",
 ] 
 
 def getModuleSettingsFromSampleName(sample):
@@ -79,7 +81,7 @@ config.JobType.allowUndistributedCMSSW = True
 data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
 datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
 
-from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
+#from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV4_2017 import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
@@ -87,7 +89,7 @@ from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc
 #from datasetsNanoV6_2018 import mc2018
 #from datasetsNanoV6_ForJerStudy_2016 import mc2016
 
-#from datasetsAndreaV10_DataSignal_2018 import data2018,mc2018
+from datasetsAndreaV10_DataSignal_2018 import data2018,mc2018
 #from datasetsAndreaV8_DataSignal import mc2017
 #from datasetsAndreaV4_2017 import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2017

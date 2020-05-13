@@ -20,9 +20,9 @@ mc2016 = {
 ],
 
 #amcatnlo pythia8
-"DY_2016AMCPY"      : [
-    "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext2-v1/NANOAODSIM",
-],
+#"DY_2016AMCPY"      : [
+#    "/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext2-v1/NANOAODSIM",
+#],
 
 #madgraph herwigpp(30M??)
 "DY_2016AMCHERWIG"      : [
