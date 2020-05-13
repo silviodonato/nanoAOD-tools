@@ -1,6 +1,6 @@
 import os
 
-prodFolder = "/scratchssd/sdonato/fileSkimFromNanoAOD/PROD_12_1/"
+prodFolder = "/scratchssd/sdonato/fileSkimFromNanoAOD/PROD_13_2/"
 folders = [f for f in os.listdir(prodFolder) if not os.path.isfile(os.path.join(prodFolder, f))]
 
 #folders = ['DY105VBF_2016AMCPY','DY2J_2017AMCPY']

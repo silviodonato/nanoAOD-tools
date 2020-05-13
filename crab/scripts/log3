@@ -1,0 +1,258 @@
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/PROD_12_0_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20-v1; no such file or directory
+
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/PROD_12_0_RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1; no such file or directory
+
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/VBFHToMuMu_M-125_TuneEEC5_13TeV-amcatnlo-herwigpp/PROD_12_0_RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1; no such file or directory
+
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/PROD_12_0_RunIIAutumn18NanoAODv6-Nano25Oct2019_102X_upgrade2018_realistic_v20_ext1-v1; no such file or directory
+
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/GluGlu_HToMuMu_M125_13TeV_powheg_pythia8/PROD_12_0_RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7_ext1-v1; no such file or directory
+
+[ERROR] Server responded with an error: [3011] Unable to locate /store/user/sdonato/PROD_12_0/GluGluHToMuMu_M-125_TuneCP5_PSweights_13TeV_powheg_pythia8/PROD_12_0_RunIISummer16NanoAODv6-PUMoriond17_Nano25Oct2019_102X_mcRun2_asymptotic_v7-v1; no such file or directory
+
+Running WWlnqq_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WWlnqq_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WWlnqq_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WWlnqq_2018POWPY/logScript
+DONE WWlnqq_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WWlnqq_2018POWPY/logScript
+
+Running DY3J_2018MGPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY3J_2018MGPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY3J_2018MGPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY3J_2018MGPY/logScript
+DONE DY3J_2018MGPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY3J_2018MGPY/logScript
+
+Running DY105_2018MGPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018MGPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018MGPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018MGPY/logScript
+DONE DY105_2018MGPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018MGPY/logScript
+
+Running ZZ2l2q_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2q_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2q_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2q_2018POWPY/logScript
+DONE ZZ2l2q_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2q_2018POWPY/logScript
+
+Running ggHmm_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2018POWPY/logScript
+DONE ggHmm_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2018POWPY/logScript
+
+Running WZ2l2n_2016AMC_MADSPIN_PY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WZ2l2n_2016AMC_MADSPIN_PY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WZ2l2n_2016AMC_MADSPIN_PY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WZ2l2n_2016AMC_MADSPIN_PY/logScript
+DONE WZ2l2n_2016AMC_MADSPIN_PY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/WZ2l2n_2016AMC_MADSPIN_PY/logScript
+
+Running DY105_2016MGPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016MGPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016MGPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016MGPY/logScript
+DONE DY105_2016MGPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016MGPY/logScript
+
+Running DY1J_2018MGPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2018MGPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2018MGPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2018MGPY/logScript
+DONE DY1J_2018MGPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2018MGPY/logScript
+
+Running TTlep_2016POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016POWPY/logScript
+DONE TTlep_2016POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016POWPY/logScript
+
+Running TTlep_2016MGPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016MGPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016MGPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016MGPY/logScript
+DONE TTlep_2016MGPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTlep_2016MGPY/logScript
+
+Running TThad_2016POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2016POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2016POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2016POWPY/logScript
+DONE TThad_2016POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2016POWPY/logScript
+
+Running TT_2016POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2016POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2016POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2016POWPY/logScript
+DONE TT_2016POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2016POWPY/logScript
+
+Running ZZ4l_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2018POWPY/logScript
+DONE ZZ4l_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2018POWPY/logScript
+
+Running DY2J_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2016AMCPY/logScript
+DONE DY2J_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2016AMCPY/logScript
+
+Running W0J_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2018AMCPY/logScript
+DONE W0J_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2018AMCPY/logScript
+
+Running DY105VBF_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105VBF_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105VBF_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105VBF_2016AMCPY/logScript
+DONE DY105VBF_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105VBF_2016AMCPY/logScript
+
+Running STt_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2018POWPY/logScript
+DONE STt_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2018POWPY/logScript
+
+Running TTsemi_2016POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2016POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2016POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2016POWPY/logScript
+DONE TTsemi_2016POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2016POWPY/logScript
+
+Running STtbar_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STtbar_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STtbar_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STtbar_2018POWPY/logScript
+DONE STtbar_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STtbar_2018POWPY/logScript
+
+Running ZZ2l2n_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2n_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2n_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2n_2018POWPY/logScript
+DONE ZZ2l2n_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ2l2n_2018POWPY/logScript
+
+Running DY2J_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2018AMCPY/logScript
+DONE DY2J_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2018AMCPY/logScript
+
+Running DY0J_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2018AMCPY/logScript
+DONE DY0J_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2018AMCPY/logScript
+
+Running DYM50_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2016AMCPY/logScript
+DONE DYM50_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2016AMCPY/logScript
+
+Running DYM50_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2018AMCPY/logScript
+DONE DYM50_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DYM50_2018AMCPY/logScript
+
+Running ggHmm_2016POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2016POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2016POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2016POWPY/logScript
+DONE ggHmm_2016POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ggHmm_2016POWPY/logScript
+
+Running DY1J_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2016AMCPY/logScript
+DONE DY1J_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY1J_2016AMCPY/logScript
+
+Running DY0J_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2016AMCPY/logScript
+DONE DY0J_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY0J_2016AMCPY/logScript
+
+Running TTsemi_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2018POWPY/logScript
+DONE TTsemi_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TTsemi_2018POWPY/logScript
+
+Running TThad_2018POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2018POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2018POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2018POWPY/logScript
+DONE TThad_2018POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TThad_2018POWPY/logScript
+
+Running vbfHmm_2016AMCHERWIG
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/vbfHmm_2016AMCHERWIG/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/vbfHmm_2016AMCHERWIG/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/vbfHmm_2016AMCHERWIG/logScript
+DONE vbfHmm_2016AMCHERWIG 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/vbfHmm_2016AMCHERWIG/logScript
+
+Running W2J_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2016AMCPY/logScript
+DONE W2J_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2016AMCPY/logScript
+
+Running DY105_2016AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016AMCPY/logScript
+DONE DY105_2016AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2016AMCPY/logScript
+
+Running TT_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2018AMCPY/logScript
+DONE TT_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/TT_2018AMCPY/logScript
+
+Running DY105_2018AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018AMCPY/logScript
+DONE DY105_2018AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2018AMCPY/logScript
+
+Running DY105_2017AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2017AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2017AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2017AMCPY/logScript
+DONE DY105_2017AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY105_2017AMCPY/logScript
+
+Running STt_2017POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2017POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2017POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2017POWPY/logScript
+DONE STt_2017POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/STt_2017POWPY/logScript
+
+Running W2J_2017AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2017AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2017AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2017AMCPY/logScript
+DONE W2J_2017AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W2J_2017AMCPY/logScript
+
+Running ZZ4l_2017POWPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2017POWPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2017POWPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2017POWPY/logScript
+DONE ZZ4l_2017POWPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/ZZ4l_2017POWPY/logScript
+
+Running W0J_2017AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2017AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2017AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2017AMCPY/logScript
+DONE W0J_2017AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W0J_2017AMCPY/logScript
+
+Running W1J_2017AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W1J_2017AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W1J_2017AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W1J_2017AMCPY/logScript
+DONE W1J_2017AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/W1J_2017AMCPY/logScript
+
+Running DY2J_2017AMCPY
+Creating script.sh in /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2017AMCPY/script.sh
+source /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2017AMCPY/script.sh >& /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2017AMCPY/logScript
+DONE DY2J_2017AMCPY 
+ See  /home/users/sdonato/scratchssd/fileSkimFromNanoAOD/PROD_12_0/DY2J_2017AMCPY/logScript
+

@@ -1,0 +1,36 @@
+DEBUG 2020-04-11 08:50:08.782 UTC: 	 Running on: Linux cmsanalysis.pi.infn.it 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-11 08:50:08.812 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-11 08:50:08.813 UTC: 	 Executing command: 'status'
+DEBUG 2020-04-11 08:50:08.813 UTC: 	 Found CRAB cache file /home/users/sdonato/.crab3
+ERROR 2020-04-11 08:50:08.815 UTC: 	 Error: /scratchssd/sdonato/crab/crab_PROD_13_2_SingleMuonRun2018 is not a valid CRAB project directory.
+ERROR 2020-04-11 08:50:08.815 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /scratchssd/sdonato/crab/crab_PROD_13_2_SingleMuonRun2018 is not a valid CRAB project directory.
+DEBUG 2020-04-11 08:50:49.161 UTC: 	 Running on: Linux cmsanalysis.pi.infn.it 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2020-04-11 08:50:49.188 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2020-04-11 08:50:49.188 UTC: 	 Executing command: 'status'
+DEBUG 2020-04-11 08:50:49.189 UTC: 	 Found CRAB cache file /home/users/sdonato/.crab3
+ERROR 2020-04-11 08:50:49.191 UTC: 	 Error: /scratchssd/sdonato/crab/crab_PROD_13_2_SingleMuonRun2018E is not a valid CRAB project directory.
+ERROR 2020-04-11 08:50:49.192 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/bin/crab", line 145, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 277, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.2001/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 595, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: /scratchssd/sdonato/crab/crab_PROD_13_2_SingleMuonRun2018E is not a valid CRAB project directory.

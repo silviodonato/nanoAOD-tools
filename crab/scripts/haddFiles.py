@@ -1,5 +1,5 @@
 nprocesses = 16
-version = "PROD_13_0"
+version = "PROD_13_4"
 folder = "/home/users/sdonato/scratchssd/fileSkimFromNanoAOD"
 server = "t2-xrdcms.lnl.infn.it:7070"
 haddPath = "/home/users/sdonato/scratchssd/Skim/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/scripts/haddnano.py"
@@ -9,6 +9,8 @@ import subprocess
 import os
 
 data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
+
+#from datasetsAndreaV8_V10_gerosa import mc2016, mc2017, mc2018
 #from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
 #from datasetsNanoV6_2018 import mc2018
@@ -17,14 +19,27 @@ data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), d
 #from datasetsNanoV6_ForJerStudy_2016 import mc2016
 
 #from datasetsAndreaV4_2017 import mc2017
-from datasetsAndreaV8_DataSignal import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2017
+#from datasetsAndreaV8_DataSignal import mc2017
+from datasetsAndreaV10_DataSignal_2018 import data2018,mc2018
 
 selection = [
-"vbfHmm_2017POWHERWIG7",
-"vbfHmm_2017POWPY2",
+#"SingleMuonRun2018A",
+#"SingleMuonRun2018B",
+#"SingleMuonRun2018C"
+#"vbfHmm_2017POWHERWIG7",
+#"vbfHmm_2017POWPY2",
 #"DY2J_2017AMCPY",
-#"EWKZ_2017MGPY2",
+#"EWKZ105_2016MGPYDIPOLE",
+#"EWKZ105_2017MGPYDIPOLE",
+#"EWKZ105_2018MGPYDIPOLE",
+#"PROD_13_4_EWKZ105_2016MGPYDIPOLE",
+#"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
+#"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
+"ggHmm_2018AMCPY",
+#"ggHmm_2018POWPY",
+"EWKZ105CORR_2018MGHERWIG",
+"EWKZCORR_2018MGHERWIG",
 #"ZZ4l_2017POWPY",
 #"STtbar_2017POWPY",
 ]
