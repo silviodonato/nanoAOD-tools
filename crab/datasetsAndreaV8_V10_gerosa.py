@@ -14,7 +14,7 @@ mc2016 = {
 ],
 
 "EWKZ105_2016MGPYDIPOLE"      : [
-    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRNANO2016MCV8h_04392dd37792585c69c0-b5627bf5542cb3e56008c4afca3c6465/USER',
+    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRNANO2016MCV8i_04392dd37792585c69c0-b5627bf5542cb3e56008c4afca3c6465/USER',
 ],
 }
 
@@ -27,7 +27,7 @@ mc2017 = {
 ],
 
 "EWKZ105_2017MGPYDIPOLE"      : [
-    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8h_74883e19626ddbf3d288-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
+    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV8i_74883e19626ddbf3d288-d7d59b1b3918a7b5ede4f0e937af8b3e/USER',
 ],
 }
 
@@ -45,9 +45,10 @@ mc2018 = {
 ],
 
 "EWKZ105_2018MGPYDIPOLE"      : [
-    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8h_9f12feadf56f2d534f5f-91eaff287f592060132a857a833a7efc/USER',
+##    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8i_9f12feadf56f2d534f5f-91eaff287f592060132a857a833a7efc/USER', ## need V10!
 ],
 }
+
 
 
 
