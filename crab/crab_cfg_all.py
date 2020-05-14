@@ -5,7 +5,7 @@ from CRABClient.UserUtilities import config, getUsernameFromSiteDB
 
 config = Configuration()
 
-version = "PROD_13_4"
+version = "PROD_13_5"
 
 datasetToTest = [ ## if empty, run on all datasets
     #"/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
@@ -19,8 +19,8 @@ requestsToTest = [ ## if empty, run on all datasets
 #"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
 #"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
 #"PROD_13_4_ggHmm_2018AMCPY",
-"PROD_13_4_EWKZ105CORR_2018MGHERWIG",
-"PROD_13_4_EWKZCORR_2018MGHERWIG",
+#"PROD_13_5_EWKZ105_2016MGPYDIPOLE",
+"PROD_13_5_EWKZ105_2018MGPYDIPOLE",
 ] 
 
 def getModuleSettingsFromSampleName(sample):
@@ -81,7 +81,7 @@ config.JobType.allowUndistributedCMSSW = True
 data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
 datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
 
-#from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
+from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV4_2017 import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
@@ -89,7 +89,7 @@ datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
 #from datasetsNanoV6_2018 import mc2018
 #from datasetsNanoV6_ForJerStudy_2016 import mc2016
 
-from datasetsAndreaV10_DataSignal_2018 import data2018,mc2018
+#from datasetsAndreaV10_DataSignal_2018 import data2018,mc2018
 #from datasetsAndreaV8_DataSignal import mc2017
 #from datasetsAndreaV4_2017 import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2017
@@ -137,9 +137,9 @@ if __name__ == '__main__':
                 print
                 print config
                 print
-                try:
-#                if True:
+#                try:
+                if True:
                     crabCommand('submit', config = config, dryrun = False) ## dryrun = True for local test
                     print "DONE"
-                except:
-                    print('crab submission failed. Move the the next job. %s'%requestName)
+#                except:
+#                    print('crab submission failed. Move the the next job. %s'%requestName)

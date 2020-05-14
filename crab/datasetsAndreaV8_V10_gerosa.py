@@ -45,7 +45,7 @@ mc2018 = {
 ],
 
 "EWKZ105_2018MGPYDIPOLE"      : [
-##    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2018_NANOV8i_9f12feadf56f2d534f5f-91eaff287f592060132a857a833a7efc/USER', ## need V10!
+    '/EWK_LLJJ_MLL_105-160_TuneCP5_13TeV-madgraph-pythia_dipole/arizzi-RunIISummer16MiniAODv3_FSRnano18MC_NANOV10c_9f12feadf56f2d534f5f-d92a4324cf7915102060a1e7868b1f8f/USER',
 ],
 }
 
