@@ -60,7 +60,7 @@ class btagSFProducer(Module):
                     'supported_wp' : [ "L", "M", "T", "shape_corr" ]
                 },
                 '2017' : {
-                    'inputFileName' : "CSVv2_94XSF_V2_B_F.csv",
+                    'inputFileName' : "CSVv2_94XSF_V5_B_F.csv",
                     'measurement_types' : {
                         0 : "comb",  # b
                         1 : "comb",  # c
