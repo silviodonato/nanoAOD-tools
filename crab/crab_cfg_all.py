@@ -5,7 +5,7 @@ from CRABClient.UserUtilities import config, getUsernameFromSiteDB
 
 config = Configuration()
 
-version = "PROD_13_5"
+version = "PROD_14_2"
 
 datasetToTest = [ ## if empty, run on all datasets
     #"/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
@@ -20,7 +20,7 @@ requestsToTest = [ ## if empty, run on all datasets
 #"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
 #"PROD_13_4_ggHmm_2018AMCPY",
 #"PROD_13_5_EWKZ105_2016MGPYDIPOLE",
-"PROD_13_5_EWKZ105_2018MGPYDIPOLE",
+#"PROD_14_1_vbfHmm_2017POWHERWIG7",
 ] 
 
 def getModuleSettingsFromSampleName(sample):
@@ -81,7 +81,8 @@ config.JobType.allowUndistributedCMSSW = True
 data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
 datasetsNames = ["mc2016","mc2017","mc2018","data2016","data2017","data2018"]
 
-from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
+#from datasetsAndreaV8_V10_gerosa import data2016, data2017, data2018, mc2016, mc2017, mc2018
+from datasetsNanoV7 import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV4_2017 import mc2017
 #from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
