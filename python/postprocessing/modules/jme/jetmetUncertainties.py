@@ -8,6 +8,7 @@ from PhysicsTools.NanoAODTools.postprocessing.framework.eventloop import Module
 from PhysicsTools.NanoAODTools.postprocessing.tools import matchObjectCollection, matchObjectCollectionMultiple
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetSmearer import jetSmearer
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.JetReCalibrator import JetReCalibrator
+from PhysicsTools.NanoAODTools.postprocessing.modules.jme.JetPuId17 import JetPuId17
 
 class jetmetUncertaintiesProducer(Module):
     def __init__(self, era, globalTag, jesUncertainties = [ "Total" ], jetType = "AK4PFchs", redoJEC=False, noGroom=False, reducedJECsystematics=False):
@@ -40,6 +41,8 @@ class jetmetUncertaintiesProducer(Module):
             self.jmrVals = [1.09, 1.14, 1.04]
 
         self.jetSmearer = jetSmearer(globalTag, jetType, self.jerInputFileName, self.jerUncertaintyInputFileName, self.jmrVals)
+
+        self.doPuId17 = True
 
         if "AK4" in jetType : 
             self.jetBranchName = "Jet"
@@ -153,6 +156,9 @@ class jetmetUncertaintiesProducer(Module):
         self.out.branch("%s_corr_JMS" % self.jetBranchName, "F", lenVar=self.lenVar)
         self.out.branch("%s_corr_JMR" % self.jetBranchName, "F", lenVar=self.lenVar)
 
+        if self.doPuId17:
+            self.out.branch("%s_puId17" % self.jetBranchName, "I", lenVar=self.lenVar)
+
         if self.doGroomed:
             self.out.branch("%s_msoftdrop_raw" % self.jetBranchName, "F", lenVar=self.lenVar)
             self.out.branch("%s_msoftdrop_nom" % self.jetBranchName, "F", lenVar=self.lenVar)
@@ -247,6 +253,9 @@ class jetmetUncertaintiesProducer(Module):
                 met_py_jesUp[jesUncertainty]   = met_py
                 met_px_jesDown[jesUncertainty] = met_px
                 met_py_jesDown[jesUncertainty] = met_py
+
+        if self.doPuId17:
+            jets_puId17 = []
 
         if self.doGroomed:
             jets_msdcorr_raw = []
@@ -345,6 +354,9 @@ class jetmetUncertaintiesProducer(Module):
             jets_mass_jmsUp  .append(jet_pt_jerNomVal *jet_mass_jmrNomVal *jmsUpVal   *jet_mass)
             jets_mass_jmsDown.append(jet_pt_jerNomVal *jet_mass_jmrNomVal *jmsDownVal *jet_mass)
 
+            if self.doPuId17 :
+                jets_puId17.append(JetPuId17(jet.pt, jet.eta, jet.puIdDisc)) 
+            
             if self.doGroomed :
                 # evaluate JES uncertainties
                 jet_msdcorr_jesUp   = {}
@@ -447,7 +459,10 @@ class jetmetUncertaintiesProducer(Module):
         self.out.fillBranch("%s_mass_jmrDown" % self.jetBranchName, jets_mass_jmrDown)
         self.out.fillBranch("%s_mass_jmsUp" % self.jetBranchName, jets_mass_jmsUp)
         self.out.fillBranch("%s_mass_jmsDown" % self.jetBranchName, jets_mass_jmsDown)
-            
+        
+        if self.doPuId17 :
+            self.out.fillBranch("%s_puId17" % self.jetBranchName, jets_puId17)
+
         if self.doGroomed :
             self.out.fillBranch("%s_msoftdrop_raw" % self.jetBranchName, jets_msdcorr_raw)
             self.out.fillBranch("%s_msoftdrop_nom" % self.jetBranchName, jets_msdcorr_nom)
