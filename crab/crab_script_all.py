@@ -18,10 +18,11 @@ from PhysicsTools.NanoAODTools.postprocessing.modules.common.PrefireCorr import 
 modulesToBeCalled = {
 "data2016"    : ["muonScaleRes2016", "vbfhmmModuleDATA"],
 "data2017"    : ["muonScaleRes2017", "vbfhmmModuleDATA17"],
-"data2018A"   : ["jetRecalib2018A", "muonScaleRes2018", "vbfhmmModuleDATA18"],
-"data2018B"   : ["jetRecalib2018B", "muonScaleRes2018", "vbfhmmModuleDATA18"],
-"data2018C"   : ["jetRecalib2018C", "muonScaleRes2018", "vbfhmmModuleDATA18"],
-"data2018D"   : ["jetRecalib2018D", "muonScaleRes2018", "vbfhmmModuleDATA18"],
+"data2018"    : ["muonScaleRes2018", "vbfhmmModuleDATA18"],
+#"data2018A"   : ["jetRecalib2018A", "muonScaleRes2018", "vbfhmmModuleDATA18"],
+#"data2018B"   : ["jetRecalib2018B", "muonScaleRes2018", "vbfhmmModuleDATA18"],
+#"data2018C"   : ["jetRecalib2018C", "muonScaleRes2018", "vbfhmmModuleDATA18"],
+#"data2018D"   : ["jetRecalib2018D", "muonScaleRes2018", "vbfhmmModuleDATA18"],
 
 "mc2016"      : ["jetmetUncertainties2016All", "btagSF2016", "muonScaleRes2016", "PrefCorr2016", "puAutoWeight_2016", "lepSFTrig2016_B", "lepSFID2016_B", "lepSFISO2016_B", "lepSFTrig2016_H", "lepSFID2016_H", "lepSFISO2016_H", "vbfhmmModule2016"],
 "mc2017"      : ["jetmetUncertainties2017All", "btagSF2017", "muonScaleRes2017", "PrefCorr2017", "puAutoWeight_2017", "lepSFTrig2017",   "lepSFID2017",   "lepSFISO2017",   "vbfhmmModule2017"],

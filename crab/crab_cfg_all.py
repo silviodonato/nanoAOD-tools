@@ -28,10 +28,11 @@ def getModuleSettingsFromSampleName(sample):
     elif "_2016" in sample: return 'mc2016'
     elif "Run2016" in sample: return 'data2016'
     elif "Run2017" in sample: return 'data2017'
-    elif "Run2018A" in sample: return 'data2018A'
-    elif "Run2018B" in sample: return 'data2018B'
-    elif "Run2018C" in sample: return 'data2018C'
-    elif "Run2018D" in sample: return 'data2018D'
+    elif "Run2018" in sample: return 'data2018'
+#    elif "Run2018A" in sample: return 'data2018A'
+#    elif "Run2018B" in sample: return 'data2018B'
+#    elif "Run2018C" in sample: return 'data2018C'
+#    elif "Run2018D" in sample: return 'data2018D'
     else: raise Exception("Unable to find module settings for %s"%dataset)
 
 config.section_("General")

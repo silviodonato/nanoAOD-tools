@@ -1,4 +1,25 @@
-from allNanoAODV7 import allNanoAODv7
+#dasgoclient --query "dataset status=* dataset=/*/*02Apr2020*/NANOAOD*" > allNanoAODV7_statusAll.txt
+#dasgoclient --query "dataset dataset=/*/*02Apr2020*/NANOAOD*" > allNanoAODV7.txt
+
+import sys
+
+try:
+    allNanoAODV7File = open(sys.argv[1])
+except:
+    print 
+    print "Launch with:"
+    print 'python updateDatasets.py "allNanoAODV7.txt" > datasetsNanoV7_all.py'
+    print " OR "
+    print 'python updateDatasets.py "allNanoAODV7_statusAll.txt > datasetsNanoV7_all_statusAll.py"'
+    raise Exception()
+#allNanoAODV7File = open("allNanoAODV7.txt")
+
+allNanoAODv7 = []
+for l in allNanoAODV7File.readlines():
+    allNanoAODv7.append(l.replace("\n",""))
+
+#from allNanoAODV7 import allNanoAODv7
+#from allNanoAODV7_statusAll import allNanoAODv7
 import pprint
 
 
@@ -32,8 +53,8 @@ def updateDatasets(mc, nanoAODv7datasets):
                 else:
                     print "## WARNING: %s %s"%(sample, primaryDataset)
     
-    if "TThad_2017POWPY" in mc:
-        print "HELLO",mc_pd["TThad_2017POWPY"]
+#    if "TThad_2017POWPY" in mc:
+#        print "HELLO",mc_pd["TThad_2017POWPY"]
     
     ##init mc new
     mc_new = {}
@@ -58,7 +79,7 @@ allDatasets={
 }
 
 for dataset in allNanoAODv7:
-    if   "RunIISummer15" in dataset: allDatasets["mc2016"  ].add(dataset)
+    if   "RunIISummer16" in dataset: allDatasets["mc2016"  ].add(dataset)
     elif "RunIIFall17"   in dataset: allDatasets["mc2017"  ].add(dataset)
     elif "RunIIAutumn18" in dataset: allDatasets["mc2018"  ].add(dataset)
     elif "SingleMuon" in dataset and "Run2016" in dataset: allDatasets["data2016"].add(dataset)
@@ -118,4 +139,9 @@ print "mc2018 = ",
 pprint.pprint(updateDatasets(mc2018, allDatasets["mc2018"]))
 print
 
-
+print "'''"
+print "EMPTY SAMPLES:"
+for dic in data2018, data2017, data2016, mc2018, mc2017, mc2016:
+    for k in dic:
+       if len(dic[k])==0: print k
+print "'''"

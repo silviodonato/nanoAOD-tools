@@ -94,8 +94,7 @@ class vbfhmmProducer(Module):
 
 
         if self.data :
-            if self.year == "2018" : self.jesVariation =  ['pt_nom']
-            else : self.jesVariation =  ['pt']
+            self.jesVariation =  ['pt']
         
         
         jet1_jesTotalDown = ROOT.TLorentzVector()
