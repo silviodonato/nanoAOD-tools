@@ -501,8 +501,8 @@ jetmetUncertainties2016All = lambda : jetmetUncertaintiesProducer("2016", "Summe
 jetmetUncertainties2017 = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC", [ "Total" ])
 jetmetUncertainties2017All = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC", [ "All" ], reducedJECsystematics=True)
 
-jetmetUncertainties2018 = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ], redoJEC=True)
-jetmetUncertainties2018All = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "All" ], redoJEC=True, reducedJECsystematics=True)
+jetmetUncertainties2018 = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ])
+jetmetUncertainties2018All = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "All" ], reducedJECsystematics=True)
 
 jetmetUncertainties2016AK4Puppi = lambda : jetmetUncertaintiesProducer("2016", "Summer16_07Aug2017_V11_MC", [ "Total" ], jetType="AK4PFPuppi")
 jetmetUncertainties2016AK4PuppiAll = lambda : jetmetUncertaintiesProducer("2016", "Summer16_07Aug2017_V11_MC",  [ "All" ], jetType="AK4PFPuppi")
@@ -510,8 +510,8 @@ jetmetUncertainties2016AK4PuppiAll = lambda : jetmetUncertaintiesProducer("2016"
 jetmetUncertainties2017AK4Puppi = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC", [ "Total" ], jetType="AK4PFPuppi")
 jetmetUncertainties2017AK4PuppiAll = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC",  [ "All" ], jetType="AK4PFPuppi")
 
-jetmetUncertainties2018AK4Puppi = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ], jetType="AK4PFPuppi", redoJEC=True)
-jetmetUncertainties2018AK4PuppiAll = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC",  [ "All" ], jetType="AK4PFPuppi", redoJEC=True)
+jetmetUncertainties2018AK4Puppi = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ], jetType="AK4PFPuppi")
+jetmetUncertainties2018AK4PuppiAll = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC",  [ "All" ], jetType="AK4PFPuppi")
 
 
 jetmetUncertainties2016AK8Puppi = lambda : jetmetUncertaintiesProducer("2016", "Summer16_07Aug2017_V11_MC", [ "Total" ], jetType="AK8PFPuppi")
@@ -522,5 +522,5 @@ jetmetUncertainties2016AK8PuppiAllNoGroom = lambda : jetmetUncertaintiesProducer
 jetmetUncertainties2017AK8Puppi = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC", [ "Total" ], jetType="AK8PFPuppi")
 jetmetUncertainties2017AK8PuppiAll = lambda : jetmetUncertaintiesProducer("2017", "Fall17_17Nov2017_V32_MC", ["All"], jetType="AK8PFPuppi")
 
-jetmetUncertainties2018AK8Puppi = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ], jetType="AK8PFPuppi", redoJEC=True)
-jetmetUncertainties2018AK8PuppiAll = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", ["All"], jetType="AK8PFPuppi", redoJEC = True)
+jetmetUncertainties2018AK8Puppi = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", [ "Total" ], jetType="AK8PFPuppi")
+jetmetUncertainties2018AK8PuppiAll = lambda : jetmetUncertaintiesProducer("2018", "Autumn18_V19_MC", ["All"], jetType="AK8PFPuppi")
