@@ -25,10 +25,10 @@ class jetRecalib(Module):
 
         self.jesInputArchivePath = os.environ['CMSSW_BASE'] + "/src/PhysicsTools/NanoAODTools/data/jme/"
         # Text files are now tarred so must extract first into temporary directory (gets deleted during python memory management at script exit)
-        self.jesArchive = tarfile.open(self.jesInputArchivePath+archive+".tgz", "r:gz")
+        self.jesArchive = tarfile.open(self.jesInputArchivePath+archive+".tar.gz", "r:gz")
         self.jesInputFilePath = tempfile.mkdtemp()
         self.jesArchive.extractall(self.jesInputFilePath)
-        print("Loading jet energy scale (JES) from file '%s'" % os.path.join(self.jesInputArchivePath+archive+".tgz"))
+        print("Loading jet energy scale (JES) from file '%s'" % os.path.join(self.jesInputArchivePath+archive+".tar.gz"))
 
         self.jetReCalibrator = JetReCalibrator(globalTag, jetType , True, self.jesInputFilePath, calculateSeparateCorrections = False, calculateType1METCorrection  = False)
 	

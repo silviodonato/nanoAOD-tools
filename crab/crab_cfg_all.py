@@ -4,7 +4,7 @@ from CRABClient.UserUtilities import config as Configuration
 #from WMCore.Configuration import Configuration
 config = Configuration()
 
-version = "PROD_15_0"
+version = "PROD_15_2"
 
 datasetToTest = [ ## if empty, run on all datasets
     #"/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/arizzi-RunIISummer16MiniAODv3_FSRmyNanoProdMc2017_NANOV4a_017_realistic_v14-v1-35a58109e00c38928fe6fe04f08bafb3/USER"] ## if empty, run on all datasets
@@ -14,12 +14,12 @@ requestsToSkip = [ ## if empty, run on all datasets
 ]
 
 requestsToTest = [ ## if empty, run on all datasets
-#"PROD_13_4_EWKZ105_2016MGPYDIPOLE",
-#"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
-#"PROD_13_4_EWKZ105_2018MGPYDIPOLE",
-#"PROD_13_4_ggHmm_2018AMCPY",
-#"PROD_13_5_EWKZ105_2016MGPYDIPOLE",
-"PROD_15_0_vbfHmm_2017POWHERWIG",
+#"PROD_15_2_ggHmm_2016AMCPY",
+#"PROD_15_2_ggHmm_2017AMCPY",
+#"PROD_15_2_ggHmm_2018AMCPY",
+#"PROD_15_2_SingleMuonRun2016C",
+#"PROD_15_2_SingleMuonRun2017B",
+#"PROD_15_2_SingleMuonRun2018A",
 ] 
 
 def getModuleSettingsFromSampleName(sample):

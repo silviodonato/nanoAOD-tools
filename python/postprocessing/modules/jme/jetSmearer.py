@@ -19,8 +19,8 @@ class jetSmearer(Module):
         # (the txt files were downloaded from https://github.com/cms-jet/JRDatabase/tree/master/textFiles/Spring16_25nsV10_MC )
         # Text files are now tarred so must extract first
         self.jerInputArchivePath = os.environ['CMSSW_BASE'] + "/src/PhysicsTools/NanoAODTools/data/jme/"
-        self.jerTag = jerInputFileName[:jerInputFileName.find('_MC_')+len('_MC')]
-        self.jerArchive = tarfile.open(self.jerInputArchivePath+self.jerTag+".tgz", "r:gz")
+        self.jerTag = jerInputFileName[:jerInputFileName.find('_MC')+len('_MC')]
+        self.jerArchive = tarfile.open(self.jerInputArchivePath+self.jerTag+".tar.gz", "r:gz")
         self.jerInputFilePath = tempfile.mkdtemp()
         self.jerArchive.extractall(self.jerInputFilePath)
         self.jerInputFileName = jerInputFileName

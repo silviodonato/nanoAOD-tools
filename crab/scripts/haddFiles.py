@@ -1,5 +1,5 @@
 nprocesses = 16
-version = "PROD_13_5"
+version = "PROD_15_0"
 folder = "/home/users/sdonato/scratchssd/fileSkimFromNanoAOD"
 server = "t2-xrdcms.lnl.infn.it:7070"
 haddPath = "/home/users/sdonato/scratchssd/Skim/CMSSW_10_2_6/src/PhysicsTools/NanoAODTools/scripts/haddnano.py"
@@ -10,7 +10,7 @@ import os
 
 data2016, data2017, data2018, mc2016, mc2017, mc2018 = dict(), dict(), dict(), dict(), dict(), dict()
 
-from datasetsAndreaV8_V10_gerosa import mc2016, mc2017, mc2018
+from datasetsNanoV7_all import mc2016, mc2017, mc2018
 #from datasetsAndreaV8_DataSignal import data2016, data2017, data2018, mc2016, mc2017, mc2018
 #from datasetsAndreaV8_ForMassScan import mc2016, mc2017, mc2018
 #from datasetsNanoV6_2018 import mc2018
@@ -30,9 +30,10 @@ selection = [
 #"vbfHmm_2017POWHERWIG7",
 #"vbfHmm_2017POWPY2",
 #"DY2J_2017AMCPY",
-"EWKZ105_2016MGPYDIPOLE",
-"EWKZ105_2017MGPYDIPOLE",
-"EWKZ105_2018MGPYDIPOLE",
+#"EWKZ105_2016MGPYDIPOLE",
+#"EWKZ105_2017MGPYDIPOLE",
+#"EWKZ105_2018MGPYDIPOLE",
+"vbfHmm_2017POWHERWIG",
 #"PROD_13_4_EWKZ105_2016MGPYDIPOLE",
 #"PROD_13_4_EWKZ105_2017MGPYDIPOLE",
 #"PROD_13_4_EWKZ105_2018MGPYDIPOLE",

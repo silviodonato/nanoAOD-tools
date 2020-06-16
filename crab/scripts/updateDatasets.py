@@ -6,6 +6,9 @@ import sys
 try:
     allNanoAODV7File = open(sys.argv[1])
 except:
+    print "Update .txt files with"
+    print 'dasgoclient --query "dataset status=* dataset=/*/*02Apr2020*/NANOAOD*" > allNanoAODV7_statusAll.txt'
+    print 'dasgoclient --query "dataset dataset=/*/*02Apr2020*/NANOAOD*" > allNanoAODV7.txt'
     print 
     print "Launch with:"
     print 'python updateDatasets.py "allNanoAODV7.txt" > datasetsNanoV7_all.py'
@@ -43,29 +46,35 @@ def updateDatasets(mc, nanoAODv7datasets):
         for dataset in mc[sample]:
             if dataset:
                 primaryDataset = dataset.split("/")[1]
-                if "ext1" in dataset: primaryDataset += "ext1"
-                if "ext2" in dataset: primaryDataset += "ext2"
-                if "ext3" in dataset: primaryDataset += "ext3"
-                if "v2" in dataset: primaryDataset += "v2"
+                if "ext1" in dataset: primaryDataset += "XXXext1"
+                if "ext2" in dataset: primaryDataset += "XXXext2"
+                if "ext3" in dataset: primaryDataset += "XXXext3"
+                if "v2" in dataset: primaryDataset += "XXXv2"
                 if not primaryDataset in allPrimaryDatasets:
                     allPrimaryDatasets.add(primaryDataset)
                     mc_pd[sample].add(primaryDataset)
                 else:
                     print "## WARNING: %s %s"%(sample, primaryDataset)
     
-#    if "TThad_2017POWPY" in mc:
-#        print "HELLO",mc_pd["TThad_2017POWPY"]
+#    if "ZZ_2016AMCPY" in mc:
+#        print "#DEBUG",mc_pd["ZZ_2016AMCPY"]
     
     ##init mc new
+    allNewDatasets=set()
     mc_new = {}
     for sample in mc:
         mc_new[sample] = []
         for primaryDataset in mc_pd[sample]:
-            primaryDataset = primaryDataset.replace("ext1","")
-            primaryDataset = primaryDataset.replace("ext2","")
-            primaryDataset = primaryDataset.replace("ext3","")
-            primaryDataset = primaryDataset.replace("v2","")
-            mc_new[sample] += [dataset for dataset in nanoAODv7datasets if primaryDataset in dataset]
+            primaryDataset = primaryDataset.replace("XXXext1","")
+            primaryDataset = primaryDataset.replace("XXXext2","")
+            primaryDataset = primaryDataset.replace("XXXext3","")
+            primaryDataset = primaryDataset.replace("XXXv2","")
+            for dataset in nanoAODv7datasets:
+                if primaryDataset+"/" in dataset and not dataset in mc_new[sample]:
+                    mc_new[sample].append(dataset)
+                    if dataset in allNewDatasets:
+                        print "### WARNING ### %s repeated"%dataset
+                    allNewDatasets.add(dataset)
     
     return mc_new
 
@@ -119,6 +128,10 @@ mc2018.update(datasetsNanoV6_2018.mc2018)
 import datasetsNanoV6_ForJerStudy_2016 
 mc2016.update(datasetsNanoV6_ForJerStudy_2016.mc2016)
 
+mc2016 = updateDatasets(mc2016, allDatasets["mc2016"])
+mc2017 = updateDatasets(mc2017, allDatasets["mc2017"])
+mc2018 = updateDatasets(mc2018, allDatasets["mc2018"])
+
 print
 print "data2016 = ",
 pprint.pprint(data2016)
@@ -130,13 +143,13 @@ print "data2018 = ",
 pprint.pprint(data2018)
 print
 print "mc2016 = ",
-pprint.pprint(updateDatasets(mc2016, allDatasets["mc2016"]))
+pprint.pprint(mc2016)
 print
 print "mc2017 = ",
-pprint.pprint(updateDatasets(mc2017, allDatasets["mc2017"]))
+pprint.pprint(mc2017)
 print
 print "mc2018 = ",
-pprint.pprint(updateDatasets(mc2018, allDatasets["mc2018"]))
+pprint.pprint(mc2018)
 print
 
 print "'''"
