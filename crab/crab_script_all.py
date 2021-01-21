@@ -6,6 +6,7 @@ from PhysicsTools.NanoAODTools.postprocessing.framework.postprocessor import *
 from PhysicsTools.NanoAODTools.postprocessing.framework.crabhelper import inputFiles,runsAndLumis
 
 from  PhysicsTools.NanoAODTools.postprocessing.examples.vbfhmmSkim import *
+from  PhysicsTools.NanoAODTools.postprocessing.examples.vbfhmmSkimPhase2 import vbfhmmModulePhase2
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetmetUncertainties import *
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetPuId17 import *
 from PhysicsTools.NanoAODTools.postprocessing.modules.jme.jetRecalib import *
@@ -28,6 +29,8 @@ modulesToBeCalled = {
 "mc2016"      : ["jetPuId17","jetmetUncertainties2016All", "btagSF2016", "muonScaleRes2016", "PrefCorr2016", "puAutoWeight_2016", "lepSFTrig2016_B", "lepSFID2016_B", "lepSFISO2016_B", "lepSFTrig2016_H", "lepSFID2016_H", "lepSFISO2016_H", "vbfhmmModule2016"],
 "mc2017"      : ["jetPuId17","jetmetUncertainties2017All", "btagSF2017", "muonScaleRes2017", "PrefCorr2017", "puAutoWeight_2017", "lepSFTrig2017",   "lepSFID2017",   "lepSFISO2017",   "vbfhmmModule2017"],
 "mc2018"      : ["jetPuId17","jetmetUncertainties2018All", "btagSF2018", "muonScaleRes2018",                 "puAutoWeight_2018", "lepSFTrig2018",   "lepSFID2018",   "lepSFISO2018",   "vbfhmmModule2018"],
+
+"mcPhase2"      : ["vbfhmmModulePhase2"],
 }
 
 if len(sys.argv) != 3:
