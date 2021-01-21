@@ -4,7 +4,7 @@
 
     cmsrel CMSSW_10_2_6
     cd CMSSW_10_2_6/src
-    git clone https://github.com/silviodonato/nanoAOD-tools.git PhysicsTools/NanoAODTools
+    git clone git@github.com:silviodonato/nanoAOD-tools.git
     cd PhysicsTools/NanoAODTools
     cmsenv
     scram b -j8
@@ -43,7 +43,7 @@
 
 You need to setup python 2.7 and a recent ROOT version first.
 
-    git clone https://github.com/silviodonato/nanoAOD-tools.git NanoAODTools
+    git clone git@github.com:silviodonato/nanoAOD-tools.git
     cd NanoAODTools
     bash standalone/env_standalone.sh build
     source standalone/env_standalone.sh
